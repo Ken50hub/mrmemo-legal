@@ -1,0 +1,311 @@
+/* Mr.Memo Legal Pages - Common Styles
+ * Indigo Sky Wash テーマ準拠(Mr.Memo本体と統一感)
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2C3E6B;
+  background-color: #EAF0F9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+
+/* ヘッダー */
+header {
+  background-color: #2C3E6B;
+  color: #F5F0E8;
+  padding: 32px 20px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+header .app-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  letter-spacing: 0.02em;
+}
+
+header .tagline {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.85;
+  margin: 0;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* タイトル領域 */
+.page-title {
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2C3E6B;
+}
+
+.last-updated {
+  font-size: 14px;
+  color: #5B7BB8;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.lang-switcher {
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.lang-switcher a {
+  color: #2C3E6B;
+  text-decoration: none;
+  border-bottom: 1px solid #C9D5E8;
+  padding-bottom: 1px;
+  margin-right: 12px;
+}
+
+.lang-switcher a:hover {
+  border-bottom-color: #2C3E6B;
+}
+
+.lang-switcher .current {
+  color: #5B7BB8;
+  border-bottom: none;
+  font-weight: 600;
+}
+
+/* 本文カード */
+main {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 8px rgba(44, 62, 107, 0.06);
+  border: 1px solid #C9D5E8;
+}
+
+main h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2C3E6B;
+  margin: 32px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #C9D5E8;
+}
+
+main h2:first-child {
+  margin-top: 0;
+}
+
+main h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #2C3E6B;
+  margin: 24px 0 8px;
+}
+
+main p {
+  margin: 0 0 16px;
+  color: #2C3E6B;
+}
+
+main strong {
+  font-weight: 700;
+  color: #2C3E6B;
+}
+
+main ul {
+  padding-left: 24px;
+  margin: 0 0 16px;
+}
+
+main li {
+  margin-bottom: 6px;
+  color: #2C3E6B;
+}
+
+main hr {
+  border: none;
+  border-top: 1px solid #C9D5E8;
+  margin: 32px 0;
+}
+
+main a {
+  color: #2C3E6B;
+  text-decoration: underline;
+  text-decoration-color: #C9D5E8;
+  text-underline-offset: 3px;
+}
+
+main a:hover {
+  text-decoration-color: #2C3E6B;
+}
+
+/* 連絡先ボックス */
+.contact-box {
+  background-color: #EAF0F9;
+  border-left: 4px solid #2C3E6B;
+  padding: 16px 20px;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+.contact-box strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+/* 注意ボックス */
+.note-box {
+  background-color: #FFF7E6;
+  border-left: 4px solid #E8A848;
+  padding: 16px 20px;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+.note-box strong {
+  color: #6B4A1F;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #C9D5E8;
+  font-size: 13px;
+  color: #5B7BB8;
+}
+
+footer .signature {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #2C3E6B;
+  margin-bottom: 8px;
+}
+
+/* レスポンシブ */
+@media (max-width: 600px) {
+  .container {
+    padding: 16px 16px 48px;
+  }
+
+  header {
+    padding: 24px 16px;
+    margin-bottom: 24px;
+  }
+
+  header .app-name {
+    font-size: 24px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  main {
+    padding: 24px 20px;
+  }
+
+  main h2 {
+    font-size: 18px;
+  }
+
+  main h3 {
+    font-size: 16px;
+  }
+}
+
+/* ダークモード対応 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1A2238;
+    color: #C9D5E8;
+  }
+
+  main {
+    background-color: #2C3E6B;
+    border-color: #3D5288;
+  }
+
+  main h2,
+  main h3,
+  main p,
+  main strong,
+  main li,
+  .page-title {
+    color: #EAF0F9;
+  }
+
+  main h2 {
+    border-bottom-color: #3D5288;
+  }
+
+  main hr {
+    border-top-color: #3D5288;
+  }
+
+  main a {
+    color: #B8D0F0;
+    text-decoration-color: #5B7BB8;
+  }
+
+  main a:hover {
+    text-decoration-color: #B8D0F0;
+  }
+
+  .contact-box {
+    background-color: #1A2238;
+    border-left-color: #B8D0F0;
+  }
+
+  .note-box {
+    background-color: #3D2E1A;
+    border-left-color: #E8A848;
+  }
+
+  .note-box strong {
+    color: #F5C97D;
+  }
+
+  .last-updated {
+    color: #8FA3C4;
+  }
+
+  .lang-switcher a {
+    color: #C9D5E8;
+    border-bottom-color: #5B7BB8;
+  }
+
+  .lang-switcher .current {
+    color: #8FA3C4;
+  }
+
+  footer {
+    border-top-color: #3D5288;
+    color: #8FA3C4;
+  }
+
+  footer .signature {
+    color: #C9D5E8;
+  }
+}

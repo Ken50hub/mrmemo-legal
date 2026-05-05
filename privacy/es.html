@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de Privacidad de Mr.Memo - Protección de privacidad para la aplicación de notas">
+  <meta name="robots" content="index, follow">
+  <title>Política de Privacidad | Mr.Memo</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="app-name">Mr.Memo</h1>
+    <p class="tagline">Think. Release. Resolve.</p>
+  </header>
+
+  <div class="container">
+    <h2 class="page-title">Política de Privacidad</h2>
+    <p class="last-updated">Última actualización: 5 de mayo de 2026</p>
+
+    <p class="lang-switcher">
+      <a href="ja.html">日本語</a>
+      <a href="en.html">English</a>
+      <a href="zh.html">中文</a>
+      <span class="current">Español</span>
+      <a href="ko.html">한국어</a>
+    </p>
+
+    <main>
+      <h2>Introducción</h2>
+      <p>Esta Política de Privacidad ("Política") describe cómo Mr.Memo (la "Aplicación") maneja la información del usuario.</p>
+      <p>Mr.Memo está diseñada con la privacidad del usuario como máxima prioridad y, como principio general, la Aplicación no recopila ninguna información personal.</p>
+
+      <hr>
+
+      <h2>1. Información que Manejamos</h2>
+
+      <h3>1.1 Información que NO Recopilamos</h3>
+      <p>La Aplicación <strong>no recopila</strong> ninguna de la siguiente información:</p>
+      <ul>
+        <li>Información personal como nombre, dirección o número de teléfono</li>
+        <li>Direcciones de correo electrónico o información de cuenta de usuario</li>
+        <li>Datos de ubicación</li>
+        <li>Contactos o álbumes de fotos</li>
+        <li>Identificadores de dispositivo (ID de publicidad, etc.)</li>
+        <li>Registros de uso o datos de análisis</li>
+        <li>Informes de fallos</li>
+      </ul>
+
+      <h3>1.2 Información Almacenada Solo Localmente en su Dispositivo</h3>
+      <p>La Aplicación almacena los siguientes datos ingresados por el usuario <strong>solo en su dispositivo</strong>. Estos datos nunca se transmiten a servidores externos y son inaccesibles para terceros, incluyendo al desarrollador:</p>
+      <ul>
+        <li>Contenido de las notas</li>
+        <li>Carpetas, etiquetas y favoritos</li>
+        <li>Configuración de la aplicación (tema, tamaño de fuente, idioma, etc.)</li>
+      </ul>
+
+      <hr>
+
+      <h2>2. Almacenamiento y Gestión de Datos</h2>
+
+      <h3>2.1 Ubicación de Almacenamiento</h3>
+      <p>Todos los datos creados en la Aplicación se almacenan en una base de datos local (SQLite) en su dispositivo.</p>
+      <p>Estos datos se almacenan en el "almacenamiento específico de la aplicación" de Android y son inaccesibles para otras aplicaciones según el diseño estándar de Android (excepto en dispositivos con permisos de root). La base de datos se elimina por completo al desinstalar la Aplicación.</p>
+
+      <h3>2.2 Transmisión de Datos</h3>
+      <p>La Aplicación <strong>no transmite</strong> datos del usuario a ningún servidor externo para ningún propósito.</p>
+
+      <h3>2.3 Comunicación de Red</h3>
+      <p>La Aplicación en sí <strong>no se comunica con ningún servidor externo</strong> (HTTP, HTTPS, WebSocket, etc.).</p>
+      <p>Si el usuario elige compartir el contenido de las notas con otras aplicaciones (como aplicaciones de redes sociales o aplicaciones de correo electrónico), los datos se entregan a esas aplicaciones a través de las funciones estándar del sistema Android. En este caso, cómo manejan los datos las aplicaciones receptoras se determina por las políticas de privacidad de esas aplicaciones.</p>
+
+      <hr>
+
+      <h2>3. Acerca de la Función de Copia de Seguridad</h2>
+      <p>La Aplicación incluye una función para exportar notas, carpetas y otros datos como archivos de copia de seguridad cifrados, así como para restaurar datos de dichos archivos.</p>
+
+      <h3>3.1 Método de Cifrado</h3>
+      <p>Los archivos de copia de seguridad están protegidos por tecnología de cifrado estándar de la industria:</p>
+      <ul>
+        <li><strong>Algoritmo de cifrado</strong>: AES-256 (modo CBC)</li>
+        <li><strong>Función de derivación de clave</strong>: PBKDF2-SHA256 (15,000 iteraciones)</li>
+        <li><strong>Detección de manipulación</strong>: HMAC-SHA256</li>
+      </ul>
+      <p>Sin la contraseña establecida por el usuario, nadie puede descifrar el contenido del archivo de copia de seguridad. <strong>Nadie, incluyendo al desarrollador, puede conocer su contraseña.</strong></p>
+
+      <h3>3.2 Gestión de Contraseñas</h3>
+      <div class="note-box">
+        <strong>Importante:</strong> Si olvida su contraseña de copia de seguridad, los datos no podrán restaurarse de ninguna manera. Por favor, conserve su contraseña en un lugar seguro.
+      </div>
+
+      <h3>3.3 Ubicación del Archivo de Copia de Seguridad</h3>
+      <p>Los archivos de copia de seguridad se guardan en la ubicación que elija (almacenamiento del dispositivo, almacenamiento en la nube, etc.). La Aplicación nunca transmite archivos de copia de seguridad a ninguna ubicación a menos que usted lo elija explícitamente.</p>
+
+      <hr>
+
+      <h2>4. Divulgación a Terceros</h2>
+      <p>La Aplicación no proporciona datos del usuario a ningún tercero.</p>
+      <p>La Aplicación <strong>no incluye</strong> ninguno de los siguientes servicios de terceros:</p>
+      <ul>
+        <li>Servicios de publicidad (como Google AdMob)</li>
+        <li>Servicios de análisis (como Google Analytics, Firebase Analytics)</li>
+        <li>Servicios de informes de fallos (como Sentry, Crashlytics)</li>
+        <li>Integración con redes sociales</li>
+      </ul>
+
+      <hr>
+
+      <h2>5. Información Sobre Niños</h2>
+      <p>La Aplicación no está dirigida a ningún grupo de edad en particular. Sin embargo, en consideración a la privacidad de los niños, la Aplicación no recopila ninguna información personal de usuarios menores de 13 años.</p>
+
+      <hr>
+
+      <h2>6. Eliminación de Datos</h2>
+      <p>Al desinstalar la Aplicación, puede eliminar todos los datos almacenados por la Aplicación en su dispositivo.</p>
+      <p>No se requieren solicitudes separadas de eliminación de datos. El desarrollador no retiene ningún dato del usuario, por lo que no existe información a eliminar externamente.</p>
+
+      <hr>
+
+      <h2>7. Permisos del Dispositivo</h2>
+      <p>La Aplicación utiliza los siguientes permisos de Android:</p>
+      <ul>
+        <li><strong>Permiso de Internet (android.permission.INTERNET)</strong>: La Aplicación en sí no se comunica con ningún servidor externo. Este permiso se utiliza para invocar la función estándar de compartir del sistema cuando el usuario comparte contenido de notas con otras aplicaciones (como aplicaciones de redes sociales) a través de la función "Abrir con otra aplicación".</li>
+      </ul>
+      <p>La Aplicación <strong>no solicita</strong> ninguno de los siguientes permisos: almacenamiento, contactos, cámara, micrófono, ubicación, calendario o notificaciones.</p>
+      <p>Los archivos de copia de seguridad se leen y escriben a través del Marco de Acceso al Almacenamiento (SAF) estándar de Android mediante el selector de documentos, que solo accede a archivos y carpetas explícitamente seleccionados por el usuario. La Aplicación no requiere permisos de almacenamiento.</p>
+
+      <hr>
+
+      <h2>8. Medidas de Seguridad</h2>
+      <p>La Aplicación implementa las siguientes medidas para proteger los datos del usuario:</p>
+      <ul>
+        <li>Cifrado fuerte de archivos de copia de seguridad (AES-256 + PBKDF2-SHA256)</li>
+        <li>Validación de fuerza de contraseña (12 o más caracteres, mezcla de letras, números y símbolos)</li>
+        <li>Detección de manipulación (HMAC-SHA256)</li>
+        <li>Información de depuración oculta en compilaciones de producción</li>
+      </ul>
+      <p>Sin embargo, ningún sistema electrónico puede garantizar el 100% de seguridad. Los usuarios utilizan la Aplicación bajo su propia responsabilidad.</p>
+
+      <hr>
+
+      <h2>9. Cambios a Esta Política</h2>
+      <p>Esta Política puede actualizarse debido a cambios en las leyes o adiciones de funciones. La "Última actualización" se actualizará en caso de cambios significativos.</p>
+      <p>Le recomendamos que revise esta Política periódicamente.</p>
+
+      <hr>
+
+      <h2>10. Contáctenos</h2>
+      <p>Para consultas sobre esta Política o la privacidad de la Aplicación, por favor contacte:</p>
+      <div class="contact-box">
+        <strong>Desarrollador de Mr.Memo</strong>
+        Correo electrónico: <a href="mailto:ken.screener@gmail.com">ken.screener@gmail.com</a>
+      </div>
+
+      <hr>
+
+      <h2>11. Ley Aplicable</h2>
+      <p>Esta Política se interpretará y aplicará de acuerdo con las leyes de Japón.</p>
+    </main>
+
+    <footer>
+      <div class="signature">Mr.Memo &mdash; Think. Release. Resolve.</div>
+      <div>&copy; 2026 Mr.Memo</div>
+    </footer>
+  </div>
+</body>
+</html>
