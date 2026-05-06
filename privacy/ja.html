@@ -1,167 +1,148 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mr.Memo プライバシーポリシー - メモアプリのプライバシー保護方針">
-  <meta name="robots" content="index, follow">
-  <title>プライバシーポリシー | Mr.Memo</title>
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mr.Memo プライバシーポリシー</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Yu Gothic UI", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; line-height: 1.7; color: #1a1a1a; background: #fafafa; }
+  h1 { font-size: 1.6em; border-bottom: 2px solid #2C3E6B; padding-bottom: 8px; }
+  h2 { font-size: 1.2em; margin-top: 1.8em; color: #2C3E6B; }
+  h3 { font-size: 1.05em; margin-top: 1.4em; }
+  ul { padding-left: 1.4em; }
+  li { margin: 0.3em 0; }
+  .meta { color: #666; font-size: 0.9em; }
+  .lang-switch { text-align: center; margin: 16px 0; font-size: 0.9em; }
+  .lang-switch a { margin: 0 4px; color: #2C3E6B; }
+  code { background: #eee; padding: 1px 4px; border-radius: 3px; font-size: 0.9em; }
+</style>
 </head>
 <body>
-  <header>
-    <h1 class="app-name">Mr.Memo</h1>
-    <p class="tagline">Think. Release. Resolve.</p>
-  </header>
+<div class="lang-switch">
+  <strong>日本語</strong> ・
+  <a href="en.html">English</a> ・
+  <a href="zh.html">中文</a> ・
+  <a href="es.html">Español</a> ・
+  <a href="ko.html">한국어</a>
+</div>
 
-  <div class="container">
-    <h2 class="page-title">プライバシーポリシー</h2>
-    <p class="last-updated">最終更新日: 2026年5月5日</p>
+<h1>Mr.Memo プライバシーポリシー</h1>
+<p class="meta">最終更新日: 2026-05-06 / 開発: Beachside Studio</p>
 
-    <p class="lang-switcher">
-      <span class="current">日本語</span>
-      <a href="en.html">English</a>
-      <a href="zh.html">中文</a>
-      <a href="es.html">Español</a>
-      <a href="ko.html">한국어</a>
-    </p>
+<h2>はじめに</h2>
+<p>
+  Mr.Memo（以下「本アプリ」）は、Beachside Studio（以下「当方」）が提供するメモアプリです。
+  本ポリシーは、本アプリがどのような情報を扱い、どのように保護しているかを説明します。
+</p>
 
-    <main>
-      <h2>はじめに</h2>
-      <p>本プライバシーポリシー(以下「本ポリシー」)は、Mr.Memo(以下「本アプリ」)が、ユーザーの個人情報をどのように取り扱うかについて定めるものです。</p>
-      <p>本アプリは、ユーザーのプライバシーを最優先に設計されており、原則として個人情報を収集しません。</p>
+<h2>1. ユーザーが入力したメモ等の取り扱い</h2>
+<p>
+  メモ・タイトル・タグ・フォルダ名・色ラベルなど、あなたが本アプリ内で入力・作成したすべてのデータは、
+  あなたの端末内の SQLite データベースにのみ保存されます。
+</p>
+<ul>
+  <li>これらのデータは外部のサーバーに送信されません</li>
+  <li>当方（Beachside Studio）はこれらのデータにアクセスできません</li>
+  <li>広告事業者を含むいかなる第三者にも提供されません</li>
+</ul>
 
-      <hr>
+<h2>2. バックアップ機能</h2>
+<p>
+  本アプリのバックアップ機能は、メモデータを暗号化したファイル（拡張子 <code>.mrmemo</code>）として
+  端末内に作成します。
+</p>
+<ul>
+  <li>暗号化方式: AES-256-CBC + HMAC-SHA256（Encrypt-then-MAC 構成）</li>
+  <li>鍵導出: PBKDF2-SHA256（反復回数 15,000）</li>
+  <li>あなたが設定したパスワードがなければ復元できません</li>
+  <li>バックアップファイルは、共有シート経由であなたが選んだ宛先（Gmail、Google Drive、端末ストレージ等）に渡ります</li>
+  <li>当方は自動でクラウドにアップロードすることはありません</li>
+</ul>
 
-      <h2>1. 取り扱う情報</h2>
+<h2>3. 広告について</h2>
+<p>
+  本アプリは無料で提供されており、運営は Google AdMob を通じた広告で支えられています。
+</p>
 
-      <h3>1.1 本アプリが収集しない情報</h3>
-      <p>本アプリは以下の情報を<strong>一切収集しません</strong>:</p>
-      <ul>
-        <li>氏名・住所・電話番号などの個人情報</li>
-        <li>メールアドレス・ユーザーアカウント情報</li>
-        <li>位置情報</li>
-        <li>連絡先・カメラロール</li>
-        <li>デバイス識別子(広告ID等)</li>
-        <li>利用ログ・分析データ</li>
-        <li>クラッシュレポート</li>
-      </ul>
+<h3>3.1 表示する広告</h3>
+<ul>
+  <li>メモ一覧画面のヘッダー直下にバナー広告を表示</li>
+  <li>新規メモ作成 5 回ごとに 1 回、フルスクリーン広告を表示</li>
+  <li>メモ編集画面・設定画面・お気に入り・フォルダ等の他画面には広告を表示しません</li>
+</ul>
 
-      <h3>1.2 本アプリが端末内でのみ保存する情報</h3>
-      <p>本アプリは、ユーザーが入力したデータを<strong>ご利用の端末内にのみ</strong>保存します。これらのデータは外部サーバーに送信されることはなく、開発者を含む第三者がアクセスすることはできません:</p>
-      <ul>
-        <li>メモ本文</li>
-        <li>フォルダ・タグ・お気に入り情報</li>
-        <li>アプリの設定(テーマ・フォントサイズ・言語等)</li>
-      </ul>
+<h3>3.2 AdMob により収集される情報</h3>
+<p>
+  広告配信のため、Google AdMob が次の情報を取得することがあります:
+</p>
+<ul>
+  <li>広告 ID（GAID / Google Advertising ID）</li>
+  <li>App Set ID（Android 12 以上）</li>
+  <li>IP アドレスから推定されるおおまかな地域（国レベル）</li>
+  <li>端末タイプ・OS バージョン・画面サイズ</li>
+  <li>広告の表示・クリック等のインタラクション</li>
+</ul>
+<p>
+  これらは Google の広告ネットワークに送信され、当方には共有されません。
+  Google の取り扱いについては、<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a>が適用されます。
+</p>
 
-      <hr>
+<h3>3.3 メモの内容と広告の境界</h3>
+<p>
+  あなたが本アプリに入力したメモ・タイトル・タグ等の内容は、広告システム（Google AdMob を含む）に
+  一切共有されません。コード上、メモ機能と広告機能は明確に分離されています。
+</p>
 
-      <h2>2. データの保存と管理</h2>
+<h3>3.4 同意管理（EU・英国・スイス）</h3>
+<p>
+  EU・EEA・英国・スイスのユーザーには、本アプリの初回起動時に Google User Messaging Platform（IAB TCF v2.2）
+  による同意ダイアログが表示されます。同意状態に応じて、個人化広告または非個人化広告が表示されます。
+</p>
 
-      <h3>2.1 保存場所</h3>
-      <p>本アプリのすべてのデータは、お使いの端末内のローカルデータベース(SQLite)に保存されます。</p>
-      <p>このデータは、Androidの「アプリ専用ストレージ」内に保存されており、Androidの標準仕様により他のアプリからアクセスすることはできません(端末がroot化されている場合を除く)。本アプリをアンインストールすると、このデータベースは完全に削除されます。</p>
+<h3>3.5 個人化広告のデフォルトとユーザー制御</h3>
+<ul>
+  <li>本アプリのデフォルトは「非個人化広告」（行動追跡を伴わない広告）です</li>
+  <li>設定画面の「情報 / 広告のプライバシー設定」から、いつでも同意状態を再確認・変更できます</li>
+  <li>端末の Google 設定で「広告 ID をリセット」を実行すると、広告 ID を変更できます</li>
+</ul>
 
-      <h3>2.2 データの送信</h3>
-      <p>本アプリは、いかなる目的でも<strong>ユーザーデータを外部サーバーに送信しません</strong>。</p>
+<h2>4. 取得しない情報</h2>
+<p>
+  本アプリは次の情報を一切取得しません（ハードウェアの権限自体を要求しません）:
+</p>
+<ul>
+  <li>カメラ・マイク・写真ライブラリへのアクセス</li>
+  <li>連絡先・通話履歴・SMS</li>
+  <li>GPS・精密な位置情報（AdMob による IP ベースの地域推定を除く）</li>
+  <li>Google アカウント情報</li>
+  <li>独自の利用状況分析・クラッシュレポート（Firebase Analytics / Sentry / Crashlytics 等は導入していません）</li>
+</ul>
 
-      <h3>2.3 ネットワーク通信</h3>
-      <p>本アプリ自体は、外部サーバーとの通信(HTTP・HTTPS・WebSocket等)を<strong>一切行いません</strong>。</p>
-      <p>ユーザーがメモを他のアプリ(SNSアプリ・メールアプリ等)に共有する操作を行った場合、Androidシステムの標準機能を通じて他のアプリに情報が渡されます。この場合、共有先のアプリが当該データをどのように扱うかは、共有先アプリのプライバシーポリシーに従います。</p>
+<h2>5. データの保管と削除</h2>
+<ul>
+  <li>本アプリのデータは、あなたがアプリをアンインストールするか、アプリ内の機能で削除するまで端末内に保持されます</li>
+  <li>当方のサーバー上にデータを保管することはありません</li>
+  <li>AdMob 経由で Google に送信されたデータの削除については、<a href="https://support.google.com/googleplay/android-developer/answer/10787469" target="_blank" rel="noopener">Google Play のデータ削除手続き</a>に従ってください</li>
+</ul>
 
-      <hr>
+<h2>6. 子供のプライバシー</h2>
+<p>
+  本アプリは <strong>13 歳以上のユーザー</strong>を対象としています。AdMob 広告の特性上、
+  児童向け（COPPA 対象）には設計されていません。
+</p>
 
-      <h2>3. バックアップ機能について</h2>
-      <p>本アプリには、メモやフォルダ等のデータを暗号化バックアップファイルとして書き出し、復元する機能が含まれます。</p>
+<h2>7. ポリシーの変更</h2>
+<p>
+  本ポリシーは、機能追加や法令の改正に伴い改訂されることがあります。
+  重要な変更があった場合、本ページの「最終更新日」を更新します。
+</p>
 
-      <h3>3.1 暗号化方式</h3>
-      <p>バックアップファイルは、以下の業界標準的な暗号化技術によって保護されます:</p>
-      <ul>
-        <li><strong>暗号化アルゴリズム</strong>: AES-256(CBCモード)</li>
-        <li><strong>鍵導出関数</strong>: PBKDF2-SHA256(150,000回のイテレーション)</li>
-        <li><strong>改竄検知</strong>: HMAC-SHA256</li>
-      </ul>
-      <p>ユーザーが設定したパスワードを知る者でなければ、バックアップファイルの内容を復号することはできません。<strong>開発者を含め、誰一人としてユーザーのパスワードを知ることはできません</strong>。</p>
+<h2>8. お問い合わせ</h2>
+<p>
+  本ポリシーに関するご質問は、Google Play Console に登録されたデベロッパー連絡先までご連絡ください。
+</p>
 
-      <h3>3.2 パスワードの管理について</h3>
-      <div class="note-box">
-        <strong>重要:</strong> バックアップ用パスワードを忘れた場合、いかなる方法でも復元することはできません。パスワードは安全な場所に厳重に保管してください。
-      </div>
-
-      <h3>3.3 バックアップファイルの保存先</h3>
-      <p>バックアップファイルは、ユーザーが選択した保存先(端末内ストレージ・クラウドストレージ等)に保存されます。本アプリは、ユーザーが明示的に選択した場合を除き、いかなる場所にもバックアップファイルを送信しません。</p>
-
-      <hr>
-
-      <h2>4. 第三者へのデータ提供</h2>
-      <p>本アプリは、ユーザーデータを第三者に提供することはありません。</p>
-      <p>本アプリには、以下の第三者サービスは<strong>一切組み込まれていません</strong>:</p>
-      <ul>
-        <li>広告配信サービス(Google AdMob 等)</li>
-        <li>アクセス解析サービス(Google Analytics、Firebase Analytics 等)</li>
-        <li>クラッシュレポートサービス(Sentry、Crashlytics 等)</li>
-        <li>ソーシャルネットワーク連携機能</li>
-      </ul>
-
-      <hr>
-
-      <h2>5. 子どもに関する情報</h2>
-      <p>本アプリは、特定の年齢層を対象としていませんが、13歳未満のお子様のプライバシーに配慮し、いかなる個人情報も収集しません。</p>
-
-      <hr>
-
-      <h2>6. データの削除</h2>
-      <p>ユーザーは、本アプリをアンインストールすることで、本アプリが端末内に保存したすべてのデータを削除できます。</p>
-      <p>別途データ削除の申請は不要です。本アプリの開発者は、ユーザーのデータを保有していないため、削除すべき情報がそもそも存在しません。</p>
-
-      <hr>
-
-      <h2>7. 端末の権限</h2>
-      <p>本アプリは、Androidの以下の権限を使用します:</p>
-      <ul>
-        <li><strong>インターネット権限(android.permission.INTERNET)</strong>: 本アプリ自体は外部サーバーとの通信を一切行いません。本権限は、ユーザーが「他のアプリで開く」機能を使用してメモ本文を他のアプリ(SNSアプリ等)に共有する際の、システム標準の共有機能を呼び出すために使用されます。</li>
-      </ul>
-      <p>本アプリは、ストレージ権限・連絡先・カメラ・マイク・位置情報・カレンダー・通知などの権限を<strong>一切要求しません</strong>。</p>
-      <p>バックアップファイルの読み書きは、Android標準の「ドキュメントピッカー(SAF)」を経由して行うため、ユーザーが明示的に選択したファイル・フォルダにのみアクセスし、アプリ自体にストレージ権限は不要です。</p>
-
-      <hr>
-
-      <h2>8. セキュリティに関する取り組み</h2>
-      <p>本アプリは、ユーザーデータの保護のため、以下の対策を実施しています:</p>
-      <ul>
-        <li>バックアップファイルの強力な暗号化(AES-256 + PBKDF2-SHA256)</li>
-        <li>パスワード強度バリデーション(12文字以上、英数字記号3種類混在)</li>
-        <li>改竄検知機能(HMAC-SHA256)</li>
-        <li>本番ビルドでのデバッグ情報の隠蔽</li>
-      </ul>
-      <p>ただし、いかなる電子的手段も100%安全であるとは保証できません。ユーザーは、自身の判断と責任において本アプリをご利用ください。</p>
-
-      <hr>
-
-      <h2>9. 本ポリシーの変更</h2>
-      <p>本ポリシーは、法令の改正や本アプリの機能追加に伴い、変更されることがあります。重要な変更を行う場合は、本ポリシーの「最終更新日」を更新します。</p>
-      <p>定期的に本ポリシーをご確認いただくことをお勧めします。</p>
-
-      <hr>
-
-      <h2>10. お問い合わせ</h2>
-      <p>本ポリシーまたは本アプリのプライバシーに関するお問い合わせは、以下の連絡先までお願いいたします:</p>
-      <div class="contact-box">
-        <strong>Mr.Memo 開発者</strong>
-        メール: <a href="mailto:ken.screener@gmail.com">ken.screener@gmail.com</a>
-      </div>
-
-      <hr>
-
-      <h2>11. 適用法</h2>
-      <p>本ポリシーは、日本国の法令に従って解釈・適用されます。</p>
-    </main>
-
-    <footer>
-      <div class="signature">Mr.Memo &mdash; Think. Release. Resolve.</div>
-      <div>&copy; 2026 Mr.Memo</div>
-    </footer>
-  </div>
+<hr />
+<p class="meta">© 2026 Beachside Studio. All rights reserved.</p>
 </body>
 </html>

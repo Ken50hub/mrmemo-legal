@@ -1,167 +1,146 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mr.Memo 隐私政策 - 备忘录应用的隐私保护">
-  <meta name="robots" content="index, follow">
-  <title>隐私政策 | Mr.Memo</title>
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mr.Memo 隐私政策</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; line-height: 1.7; color: #1a1a1a; background: #fafafa; }
+  h1 { font-size: 1.6em; border-bottom: 2px solid #2C3E6B; padding-bottom: 8px; }
+  h2 { font-size: 1.2em; margin-top: 1.8em; color: #2C3E6B; }
+  h3 { font-size: 1.05em; margin-top: 1.4em; }
+  ul { padding-left: 1.4em; }
+  li { margin: 0.3em 0; }
+  .meta { color: #666; font-size: 0.9em; }
+  .lang-switch { text-align: center; margin: 16px 0; font-size: 0.9em; }
+  .lang-switch a { margin: 0 4px; color: #2C3E6B; }
+  code { background: #eee; padding: 1px 4px; border-radius: 3px; font-size: 0.9em; }
+</style>
 </head>
 <body>
-  <header>
-    <h1 class="app-name">Mr.Memo</h1>
-    <p class="tagline">Think. Release. Resolve.</p>
-  </header>
+<div class="lang-switch">
+  <a href="ja.html">日本語</a> ・
+  <a href="en.html">English</a> ・
+  <strong>中文</strong> ・
+  <a href="es.html">Español</a> ・
+  <a href="ko.html">한국어</a>
+</div>
 
-  <div class="container">
-    <h2 class="page-title">隐私政策</h2>
-    <p class="last-updated">最后更新日期: 2026年5月5日</p>
+<h1>Mr.Memo 隐私政策</h1>
+<p class="meta">最后更新：2026-05-06 / 开发者：Beachside Studio</p>
 
-    <p class="lang-switcher">
-      <a href="ja.html">日本語</a>
-      <a href="en.html">English</a>
-      <span class="current">中文</span>
-      <a href="es.html">Español</a>
-      <a href="ko.html">한국어</a>
-    </p>
+<h2>简介</h2>
+<p>
+  Mr.Memo（以下简称"本应用"）是由 Beachside Studio（以下简称"我们"）提供的笔记应用。
+  本政策说明本应用如何处理信息以及如何加以保护。
+</p>
 
-    <main>
-      <h2>简介</h2>
-      <p>本隐私政策(以下简称"本政策")规定了 Mr.Memo(以下简称"本应用")如何处理用户信息。</p>
-      <p>本应用在设计上将用户隐私作为最高优先级,原则上不收集任何个人信息。</p>
+<h2>1. 用户输入的笔记等数据的处理方式</h2>
+<p>
+  您在本应用中输入或创建的所有数据 —— 笔记、标题、标签、文件夹名称、颜色标签等 ——
+  仅保存在您设备的 SQLite 数据库中。
+</p>
+<ul>
+  <li>这些数据不会发送到外部服务器</li>
+  <li>我们（Beachside Studio）无法访问这些数据</li>
+  <li>不会与包括广告商在内的任何第三方共享</li>
+</ul>
 
-      <hr>
+<h2>2. 备份功能</h2>
+<p>
+  本应用的备份功能将笔记数据创建为加密文件（扩展名 <code>.mrmemo</code>），保存在您的设备上。
+</p>
+<ul>
+  <li>加密方式：AES-256-CBC + HMAC-SHA256（Encrypt-then-MAC）</li>
+  <li>密钥派生：PBKDF2-SHA256（迭代次数 15,000 次）</li>
+  <li>没有您设置的密码就无法还原备份</li>
+  <li>备份文件通过系统共享菜单传递到您选择的目的地（Gmail、Google Drive、设备存储等）</li>
+  <li>我们不会自动将备份上传到云端</li>
+</ul>
 
-      <h2>1. 我们处理的信息</h2>
+<h2>3. 关于广告</h2>
+<p>
+  本应用免费提供,通过 Google AdMob 广告维持运营。
+</p>
 
-      <h3>1.1 我们不收集的信息</h3>
-      <p>本应用<strong>不收集</strong>以下任何信息:</p>
-      <ul>
-        <li>姓名、地址、电话号码等个人信息</li>
-        <li>电子邮件地址或用户账户信息</li>
-        <li>位置数据</li>
-        <li>联系人或相册</li>
-        <li>设备标识符(广告 ID 等)</li>
-        <li>使用日志或分析数据</li>
-        <li>崩溃报告</li>
-      </ul>
+<h3>3.1 广告位置</h3>
+<ul>
+  <li>笔记列表屏幕的标题下方显示横幅广告</li>
+  <li>每创建 5 篇新笔记时显示 1 次全屏广告</li>
+  <li>编辑器、设置、收藏、文件夹等其他屏幕不显示广告</li>
+</ul>
 
-      <h3>1.2 仅在您设备本地存储的信息</h3>
-      <p>本应用将以下用户输入的数据<strong>仅存储在您的设备上</strong>。这些数据绝不会传输到外部服务器,任何第三方(包括开发者)都无法访问:</p>
-      <ul>
-        <li>备忘录内容</li>
-        <li>文件夹、标签和收藏</li>
-        <li>应用设置(主题、字体大小、语言等)</li>
-      </ul>
+<h3>3.2 AdMob 收集的信息</h3>
+<p>
+  为了投放广告,Google AdMob 可能会收集:
+</p>
+<ul>
+  <li>广告 ID(GAID / Google Advertising ID)</li>
+  <li>应用集 ID(Android 12 及更高版本)</li>
+  <li>从 IP 地址推断的大致位置(国家级别)</li>
+  <li>设备类型、操作系统版本、屏幕尺寸</li>
+  <li>广告展示、点击等互动</li>
+</ul>
+<p>
+  这些信息被发送到 Google 的广告网络,不会与我们共享。
+  Google 对这些数据的处理受 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a> 约束。
+</p>
 
-      <hr>
+<h3>3.3 笔记内容与广告之间的边界</h3>
+<p>
+  您输入到本应用中的笔记、标题、标签等内容,绝不会与广告系统(包括 Google AdMob)共享。
+  在代码层面,笔记功能与广告功能明确分离。
+</p>
 
-      <h2>2. 数据存储与管理</h2>
+<h3>3.4 同意管理(欧盟、英国、瑞士)</h3>
+<p>
+  欧盟、欧洲经济区、英国和瑞士的用户在首次启动本应用时,会看到 Google User Messaging Platform
+  (IAB TCF v2.2) 的同意对话框。根据您的同意状态,将显示个性化广告或非个性化广告。
+</p>
 
-      <h3>2.1 存储位置</h3>
-      <p>在本应用中创建的所有数据都存储在您设备上的本地数据库(SQLite)中。</p>
-      <p>这些数据存储在 Android 的"应用专用存储"中,根据 Android 的标准设计,其他应用无法访问(在 root 权限设备上除外)。卸载本应用时,该数据库将被完全删除。</p>
+<h3>3.5 默认设置和用户控制</h3>
+<ul>
+  <li>本应用默认显示"非个性化广告"(不进行行为追踪的广告)</li>
+  <li>您可以随时通过"设置 / 信息 / 广告隐私选项"重新查看和更改同意状态</li>
+  <li>您也可以通过设备的 Google 设置中的"重置广告 ID"来更改广告 ID</li>
+</ul>
 
-      <h3>2.2 数据传输</h3>
-      <p>本应用<strong>不会</strong>出于任何目的将用户数据传输到任何外部服务器。</p>
+<h2>4. 不收集的信息</h2>
+<p>
+  本应用不收集以下信息(我们也不请求相应的硬件权限):
+</p>
+<ul>
+  <li>相机、麦克风、相册访问权限</li>
+  <li>联系人、通话记录、短信</li>
+  <li>GPS 或精确位置(不包括 AdMob 基于 IP 的国家级估计)</li>
+  <li>Google 账号信息</li>
+  <li>独立的使用分析或崩溃报告(未集成 Firebase Analytics / Sentry / Crashlytics 等)</li>
+</ul>
 
-      <h3>2.3 网络通信</h3>
-      <p>本应用本身<strong>不与任何外部服务器进行通信</strong>(HTTP、HTTPS、WebSocket 等)。</p>
-      <p>如果用户选择将备忘录内容分享给其他应用(如社交网络应用或电子邮件应用),数据将通过 Android 的标准系统功能传递给这些应用。在这种情况下,接收应用如何处理数据由该应用的隐私政策决定。</p>
+<h2>5. 数据保留和删除</h2>
+<ul>
+  <li>应用数据将保留在您的设备上,直到您卸载应用或通过应用内功能删除</li>
+  <li>我们不会在我们的服务器上保存任何数据</li>
+  <li>对于通过 AdMob 发送给 Google 的数据,请遵循 <a href="https://support.google.com/googleplay/android-developer/answer/10787469" target="_blank" rel="noopener">Google Play 的数据删除程序</a></li>
+</ul>
 
-      <hr>
+<h2>6. 儿童隐私</h2>
+<p>
+  本应用面向 <strong>13 岁及以上</strong> 的用户。由于 AdMob 广告的性质,
+  本应用并非为儿童(COPPA 覆盖用户)设计。
+</p>
 
-      <h2>3. 关于备份功能</h2>
-      <p>本应用包含将备忘录、文件夹和其他数据导出为加密备份文件,以及从这些文件恢复数据的功能。</p>
+<h2>7. 政策变更</h2>
+<p>
+  本政策可能因功能添加或法律变更而修订。重要变更时,将更新页面顶部的"最后更新"日期。
+</p>
 
-      <h3>3.1 加密方法</h3>
-      <p>备份文件使用业界标准的加密技术进行保护:</p>
-      <ul>
-        <li><strong>加密算法</strong>: AES-256(CBC 模式)</li>
-        <li><strong>密钥派生函数</strong>: PBKDF2-SHA256(15,000 次迭代)</li>
-        <li><strong>篡改检测</strong>: HMAC-SHA256</li>
-      </ul>
-      <p>没有用户设置的密码,任何人都无法解密备份文件的内容。<strong>没有人(包括开发者)能够知道您的密码。</strong></p>
+<h2>8. 联系方式</h2>
+<p>
+  有关本政策的问题,请通过 Google Play Console 中注册的开发者联系邮箱联系开发者。
+</p>
 
-      <h3>3.2 密码管理</h3>
-      <div class="note-box">
-        <strong>重要:</strong> 如果您忘记了备份密码,数据将无法以任何方式恢复。请妥善保管您的密码。
-      </div>
-
-      <h3>3.3 备份文件位置</h3>
-      <p>备份文件保存到您选择的位置(设备存储、云存储等)。除非您明确选择,本应用绝不会将备份文件传输到任何位置。</p>
-
-      <hr>
-
-      <h2>4. 第三方披露</h2>
-      <p>本应用不向任何第三方提供用户数据。</p>
-      <p>本应用<strong>不包含</strong>以下任何第三方服务:</p>
-      <ul>
-        <li>广告服务(如 Google AdMob)</li>
-        <li>分析服务(如 Google Analytics、Firebase Analytics)</li>
-        <li>崩溃报告服务(如 Sentry、Crashlytics)</li>
-        <li>社交网络集成</li>
-      </ul>
-
-      <hr>
-
-      <h2>5. 关于儿童的信息</h2>
-      <p>本应用并不针对任何特定年龄段。但是,出于对儿童隐私的考虑,本应用不会从 13 岁以下用户处收集任何个人信息。</p>
-
-      <hr>
-
-      <h2>6. 数据删除</h2>
-      <p>通过卸载本应用,您可以删除本应用在您设备上存储的所有数据。</p>
-      <p>无需单独的数据删除请求。开发者不保留任何用户数据,因此外部不存在需要删除的信息。</p>
-
-      <hr>
-
-      <h2>7. 设备权限</h2>
-      <p>本应用使用以下 Android 权限:</p>
-      <ul>
-        <li><strong>互联网权限(android.permission.INTERNET)</strong>: 本应用本身不与任何外部服务器通信。此权限用于在用户通过"用其他应用打开"功能将备忘录内容分享给其他应用(如社交网络应用)时调用系统标准的分享功能。</li>
-      </ul>
-      <p>本应用<strong>不请求</strong>以下任何权限: 存储、联系人、相机、麦克风、位置、日历或通知。</p>
-      <p>备份文件通过 Android 的标准存储访问框架(SAF)文档选择器进行读写,该框架仅访问用户明确选择的文件和文件夹。本应用不需要存储权限。</p>
-
-      <hr>
-
-      <h2>8. 安全措施</h2>
-      <p>本应用实施以下措施以保护用户数据:</p>
-      <ul>
-        <li>备份文件的强加密(AES-256 + PBKDF2-SHA256)</li>
-        <li>密码强度验证(12 个或更多字符,字母、数字和符号的混合)</li>
-        <li>篡改检测(HMAC-SHA256)</li>
-        <li>在生产构建中隐藏调试信息</li>
-      </ul>
-      <p>但是,任何电子系统都不能保证 100% 安全。用户应自行承担使用本应用的责任。</p>
-
-      <hr>
-
-      <h2>9. 本政策的变更</h2>
-      <p>由于法律变更或功能新增,本政策可能会更新。如有重大变更,将更新"最后更新日期"。</p>
-      <p>建议您定期查看本政策。</p>
-
-      <hr>
-
-      <h2>10. 联系我们</h2>
-      <p>如有关于本政策或本应用隐私的咨询,请联系:</p>
-      <div class="contact-box">
-        <strong>Mr.Memo 开发者</strong>
-        电子邮件: <a href="mailto:ken.screener@gmail.com">ken.screener@gmail.com</a>
-      </div>
-
-      <hr>
-
-      <h2>11. 适用法律</h2>
-      <p>本政策应根据日本法律解释和适用。</p>
-    </main>
-
-    <footer>
-      <div class="signature">Mr.Memo &mdash; Think. Release. Resolve.</div>
-      <div>&copy; 2026 Mr.Memo</div>
-    </footer>
-  </div>
+<hr />
+<p class="meta">© 2026 Beachside Studio. 保留所有权利。</p>
 </body>
 </html>
